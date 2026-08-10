@@ -6,7 +6,7 @@ This project performs an RFM (Recency, Frequency, Monetary) analysis on customer
 
 ## Project Structure
 
-This project is part of the `Data-Analysis` repository, located under `Python/Customer Segregation/RFM Analysis`.
+This project lives in the `data-analysis-projects` repository, under `Python/Customer Segregation/RFM Analysis`.
 
 - **Data Preparation**: Cleaning and preprocessing the data.
 - **RFM Calculation**: Computing Recency, Frequency, and Monetary values for each customer.
@@ -66,11 +66,11 @@ This project is part of the `Data-Analysis` repository, located under `Python/Cu
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/nehalbk/Data-Analysis.git
+   git clone https://github.com/DavidGaso1/data-analysis-projects.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd Data-Analysis/Python/Customer Segregation/RFM Analysis
+   cd data-analysis-projects/Python/Customer Segregation/RFM Analysis
    ```
 3. Install the required packages:
    ```bash

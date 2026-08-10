@@ -1,51 +1,29 @@
-# Awesome Data Analysis Projects
+# Data Analysis Projects
 
-Welcome to my GitHub repository that houses a collection of diverse data analysis projects! 🚀 In this space, you'll find a blend of Python, SQL, and Power BI projects, each designed to explore and analyze data in unique ways.
+A collection of data analysis projects by **Davidson Ahuruezenma** — built with Python, SQL, Excel, and Power BI while learning and applying data analysis.
 
-## Table of Contents
+## Projects
 
-- [Introduction](#introduction)
-- [Projects](#projects)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
+| Project | Stack | What it does |
+|---|---|---|
+| **Customer Segmentation — RFM Analysis** | Python (Pandas, scikit-learn) | RFM (Recency, Frequency, Monetary) segmentation of e-commerce transactions, cluster analysis with PCA, and segment-level strategy |
+| **Auto Insurance Analysis** | Python (Pandas, NumPy, Matplotlib) | Customer lifetime value and churn analysis for an auto-insurance business, with survival-style exploration |
+| **Indian Air Quality Analysis** | Python + GeoJSON | Pollutant levels across Indian states and cities, with geographical mapping |
+| **Amazon Sales Data** | SQL | Queries drawing insights from Amazon sales records |
+| **Superstore Sales Analysis** | Power BI | Interactive sales dashboard with an analysis write-up |
+| **Coffee Sales** | Excel | Dashboard workbook for coffee-order sales data |
 
-## Introduction
+## Getting started
 
-Data is the heartbeat of insights, and this repository is a testament to the power of leveraging Python, SQL, and Power BI for impactful data analysis. Whether you're a data enthusiast, aspiring analyst, or just curious, there's something here for you.
+Clone the repository:
 
-## Projects and Technologies Used
+```bash
+git clone https://github.com/DavidGaso1/data-analysis-projects.git
+cd data-analysis-projects
+```
 
-### 1. [Python](./Python)
-   Leveraged for data cleaning, exploration, and analysis using popular libraries like Pandas, NumPy, and Matplotlib.
-
-### 2. [SQL](./SQL)
-   Utilized for querying and extracting insights from relational databases.
-
-
-### 3. [PowerBI](./PowerBI)
-   Employed for creating interactive and visually appealing dashboards.
-
-Feel free to explore each project folder for detailed documentation, code, and visualizations.
-
-## Getting Started
-
-To get started with these projects locally, follow these steps:
-
-1. Clone the repository: `git clone https://github.com/nehalbk/Data-Analysis.git`
-2. Navigate to the project folder: `cd Data Analysis`
-4. Run the python script, execute SQL queries and look into PowerBI visualizations
-5. Have fun!
-
-Feel free to customize the projects, experiment with the code, and adapt them to your own datasets.
-
-## Contributing
-
-If you have ideas for new projects, improvements to existing ones, or just want to contribute, feel free to open an issue or submit a pull request. Your contributions are highly valued!
+Each project folder carries its own README with the dataset link and setup steps. The main datasets come from [Kaggle](https://www.kaggle.com) and are linked in the project READMEs.
 
 ## License
 
-This repository is licensed under the [MIT License](./LICENSE). Feel free to use the code as you see fit.
-
-Happy analyzing! 📊✨
+MIT — see [LICENSE](./LICENSE).
