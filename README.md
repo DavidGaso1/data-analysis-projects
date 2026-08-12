@@ -5,6 +5,7 @@
 ![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black)
 ![Excel](https://img.shields.io/badge/Excel-Workbooks-217346?logo=microsoftexcel&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
+[![CI](https://github.com/DavidGaso1/data-analysis-projects/actions/workflows/ci.yml/badge.svg)](https://github.com/DavidGaso1/data-analysis-projects/actions/workflows/ci.yml)
 
 A collection of end-to-end data analysis projects by **Davidson Ahuruezenma** — built with
 Python, SQL, Power BI, and Excel while learning and applying data analysis.
