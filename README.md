@@ -103,14 +103,19 @@ and the raw data in `data/`.
 **What it does:** Analyzes pollutant levels across Indian states and cities and maps them
 geographically, identifying the most polluted regions and the pollutants driving poor air quality.
 
-**Pollutants covered:** CO, O₃ (ozone), SO₂, NO₂, PM2.5, PM10, and overall AQI.
+**Pollutants covered:** PM2.5, NO₂, CO, PM10, SO₂, Ozone (O₃), and NH₃.
+
+The dataset is a long-format table of station-level readings — each row records one
+`pollutant_id` (PM2.5, NO2, CO, PM10, SO2, OZONE, NH3) with min/avg/max values, plus the
+station's location and state.
 
 **Key steps:**
 
-- Load state/city pollutant measurements (CSV) with geospatial reference data
+- Load state/city pollutant readings (CSV) with geospatial reference data
   (`states_india.geojson`, `india_st.shp`).
-- Explore pollutant distributions and correlations.
-- Score and rank states (e.g., a top-10 most-affected states view).
+- Aggregate per-station readings (min/avg/max) and explore pollutant distributions grouped by
+  `pollutant_id`.
+- Score and rank states (a top-10 most-affected states view, scored vs. not-scored).
 - Map results onto India's state geometry for regional insight.
 
 **Files:** `Indian_Air_Quality_Analysis.ipynb`, `Indian_Air_Quality_Analysis.csv`,
