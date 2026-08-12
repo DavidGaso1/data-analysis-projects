@@ -7,10 +7,10 @@ Fails (non-zero exit) on any broken dataset or missing README-referenced
 deliverable, so it can gate CI.
 """
 
+import ast
 import csv
 import glob
 import os
-import py_compile
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -58,11 +58,11 @@ def main():
         if not os.path.exists(os.path.join(ROOT, rel)):
             fail(f"missing README-referenced file: {rel}")
 
-    # 3. Python sources compile (syntax check).
+    # 3. Python sources parse (syntax check, no bytecode written).
     for path in sorted(glob.glob(os.path.join(ROOT, "**", "*.py"), recursive=True)):
         try:
-            py_compile.compile(path, doraise=True)
-        except py_compile.PyCompileError as exc:
+            ast.parse(open(path, encoding="utf-8", errors="replace").read())
+        except SyntaxError as exc:
             fail(f"{path}: {exc}")
 
     if FAILURES:
